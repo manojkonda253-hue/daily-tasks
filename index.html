@@ -639,7 +639,7 @@
 
     let tasks = JSON.parse(localStorage.getItem(STORAGE_KEY_TASKS)) || INITIAL_TASKS;
     let darkMode = JSON.parse(localStorage.getItem(STORAGE_KEY_THEME)) || false;
-    let scratchpadText = localStorage.getItem(STORAGE_KEY_NOTES) || '💡 Quick notes or daily reflections...\n- Standup points\n- Grocery item list';
+    let scratchpadText = localStorage.getItem(STORAGE_KEY_NOTES) || '💡 .\n- \n- .';
 
     let selectedDate = getTodayDateString();
     let statusFilter = 'all';
