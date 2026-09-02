@@ -630,74 +630,7 @@
       return `${year}-${month}-${day}`;
     };
 
-    const INITIAL_TASKS = [
-      {
-        id: 'task-1',
-        title: 'Review quarterly project roadmap & OKRs',
-        description: 'Go over technical deliverables and resource alignment with team leads.',
-        completed: false,
-        priority: 'high',
-        category: 'Work',
-        date: getTodayDateString(),
-        time: '09:30',
-        recurring: true,
-        energy: 'deep',
-        duration: 45,
-        subtasks: [
-          { text: 'Sync with frontend lead on Q3 deliverables', completed: true },
-          { text: 'Check infrastructure budget report', completed: false }
-        ],
-        createdAt: Date.now() - 100000
-      },
-      {
-        id: 'task-2',
-        title: '45-minute HIIT & Core Workout',
-        description: 'Hydrate well before starting. Follow the interval timer routine.',
-        completed: true,
-        priority: 'medium',
-        category: 'Health',
-        date: getTodayDateString(),
-        time: '07:00',
-        recurring: true,
-        energy: 'deep',
-        duration: 45,
-        subtasks: [
-          { text: '10 min warmup stretch', completed: true },
-          { text: '25 min interval training', completed: true }
-        ],
-        createdAt: Date.now() - 200000
-      },
-      {
-        id: 'task-3',
-        title: 'Read 2 chapters of System Design handbook',
-        description: 'Take summary notes in the scratchpad regarding distributed consensus.',
-        completed: false,
-        priority: 'low',
-        category: 'Study',
-        date: getTodayDateString(),
-        time: '20:00',
-        recurring: false,
-        energy: 'deep',
-        duration: 30,
-        subtasks: [],
-        createdAt: Date.now() - 300000
-      },
-      {
-        id: 'task-4',
-        title: 'Pay utility bills and balance monthly budget',
-        description: 'Check electricity, high-speed fiber internet bills, and credit card statement.',
-        completed: false,
-        priority: 'high',
-        category: 'Finance',
-        date: getTodayDateString(),
-        time: '18:00',
-        recurring: false,
-        energy: 'quick',
-        duration: 15,
-        subtasks: [],
-        createdAt: Date.now() - 400000
-      }
-    ];
+    
 
     // Local Storage Keys
     const STORAGE_KEY_TASKS = 'daily_tasks_data_v4';
